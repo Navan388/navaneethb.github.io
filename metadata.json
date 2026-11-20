@@ -1,0 +1,8 @@
+{
+  "name": "Portfolio Web",
+  "description": "Personal portfolio of Navaneeth B, Full Stack Developer and B.Tech Information Technology student at Cochin University of Science and Technology (CUSAT).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
