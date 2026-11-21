@@ -23,7 +23,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
       isLocalResumePdfAvailable().then((available) => {
         if (!active) return;
         if (available) {
-          setPdfBlobUrl('/Navaneeth_B_Resume.pdf');
+          setPdfBlobUrl(`${import.meta.env.BASE_URL}Navaneeth_B_Resume.pdf`);
           setPdfAvailable(true);
         } else {
           generatedBlobUrl = getResumePdfBlobUrl();

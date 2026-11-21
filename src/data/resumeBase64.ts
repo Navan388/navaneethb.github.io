@@ -1,7 +1,7 @@
 import { jsPDF } from 'jspdf';
 import { portfolioData } from './portfolioData';
 
-const LOCAL_RESUME_PDF_PATH = '/Navaneeth_B_Resume.pdf';
+const LOCAL_RESUME_PDF_PATH = `${import.meta.env.BASE_URL}Navaneeth_B_Resume.pdf`;
 
 function sanitizePdfText(text: string): string {
   return text

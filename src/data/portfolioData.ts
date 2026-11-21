@@ -73,6 +73,7 @@ export interface PortfolioDataType {
 
 const contactEmail = (import.meta.env.VITE_CONTACT_EMAIL || '').trim();
 const contactPhone = (import.meta.env.VITE_CONTACT_PHONE || '').trim();
+const baseUrl = import.meta.env.BASE_URL;
 
 export const portfolioData: PortfolioDataType = {
   personal: {
@@ -82,8 +83,8 @@ export const portfolioData: PortfolioDataType = {
     email: contactEmail,
     location: 'Ernakulam, Kerala, India',
     phone: contactPhone,
-    avatar: '/assets/aistudio/prof_2b19f010.png',
-    resumePdfUrl: '/Navaneeth_B_Resume.pdf',
+    avatar: `${baseUrl}assets/aistudio/prof_2b19f010.png`,
+    resumePdfUrl: `${baseUrl}Navaneeth_B_Resume.pdf`,
     availabilityStatus: 'Actively seeking Entry-Level Full Stack Developer opportunities',
     bio: 'Enthusiastic and detail-oriented full stack developer with a passion for problem-solving and continuous learning. Seeking an entry-level role where I can contribute to innovative projects and grow in a collaborative team environment. Experienced in MERN stack development, React Native mobile apps, Python/FastAPI backend services, and relational/NoSQL databases.',
     socials: {
@@ -108,7 +109,7 @@ export const portfolioData: PortfolioDataType = {
       category: 'ai',
       categoryLabel: 'AI & Full Stack',
       featured: true,
-      image: '/ai_resume_analyzer_mockup.png',
+      image: `${baseUrl}ai_resume_analyzer_mockup.png`,
       description: 'An intelligent web application built with MERN stack on the frontend and backend, combined with a dedicated FastAPI microservice for machine learning and natural language processing.',
       features: [
         'Automated resume parsing to extract candidate information',
@@ -128,7 +129,7 @@ export const portfolioData: PortfolioDataType = {
       category: 'mobile',
       categoryLabel: 'Mobile Application',
       featured: true,
-      image: '/blood_donor_finder_mockup.png',
+      image: `${baseUrl}blood_donor_finder_mockup.png`,
       description: 'A life-saving mobile utility application developed using Flutter and Firebase to seamlessly connect volunteer blood donors with patients and hospitals in need of emergency blood units.',
       features: [
         'Donor search filtered by specific blood groups and geographical proximity',
@@ -148,7 +149,7 @@ export const portfolioData: PortfolioDataType = {
       category: 'web',
       categoryLabel: 'Web Application',
       featured: false,
-      image: '/real_estate_listing_mockup.png',
+      image: `${baseUrl}real_estate_listing_mockup.png`,
       description: 'A responsive, secure web platform developed using PHP, MySQL, HTML, CSS, and JavaScript for seamless property listings, discovery, and customer inquiry management.',
       features: [
         'Detailed property listings with images, amenities, pricing, and specifications',
